@@ -39,8 +39,8 @@ export default function SignUp() {
   return (
     <Container>
       <Form as={Col} md={{ span: 4, offset: 4 }} className="loginForm">
-        <h2 className="mt-4 mb-4">Signup</h2>
-        <Form.Group className="loginForm__control">
+        <h2 className="mt-4 mb-4">Sign up</h2>
+        <Form.Group className="loginForm__group">
           <Form.Label className="loginForm__label">First name</Form.Label>
           <Form.Control
             value={firstName}
@@ -50,8 +50,8 @@ export default function SignUp() {
             required
           />
         </Form.Group>
-        <Form.Group className="loginForm__control">
-          <Form.Label lassName="loginForm__label">Last name</Form.Label>
+        <Form.Group className="loginForm__group">
+          <Form.Label className="loginForm__label">Last name</Form.Label>
           <Form.Control
             value={lastName}
             onChange={(event) => setLastName(event.target.value)}
@@ -60,16 +60,16 @@ export default function SignUp() {
             required
           />
         </Form.Group>
-        <Form.Group className="loginForm__control">
-          <Form.Label lassName="loginForm__label">Phone number</Form.Label>
+        <Form.Group className="loginForm__group">
+          <Form.Label className="loginForm__label">Phone number</Form.Label>
           <PhoneInput
             country={"nl"}
             value={phoneNumber}
             onChange={(phoneNumber) => setPhoneNumber(phoneNumber)}
           />
         </Form.Group>
-        <Form.Group className="loginForm__control">
-          <Form.Label lassName="loginForm__label">Email address</Form.Label>
+        <Form.Group className="loginForm__group">
+          <Form.Label className="loginForm__label">Email address</Form.Label>
           <Form.Control
             value={email}
             onChange={(event) => setEmail(event.target.value)}
@@ -78,8 +78,8 @@ export default function SignUp() {
             required
           />
         </Form.Group>
-        <Form.Group className="loginForm__control">
-          <Form.Label lassName="loginForm__label">Password</Form.Label>
+        <Form.Group className="loginForm__group">
+          <Form.Label className="loginForm__label">Password</Form.Label>
           <Form.Control
             value={password}
             onChange={(event) => setPassword(event.target.value)}

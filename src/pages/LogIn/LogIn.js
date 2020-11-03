@@ -36,9 +36,9 @@ export default function LogIn() {
   return (
     <Container className="loginPage">
       <Form as={Col} md={{ span: 4, offset: 4 }} className="loginForm">
-        <h2 className="mt-4 mb-4">Login</h2>
-        <Form.Group className="loginForm__control">
-          <Form.Label lassName="loginForm__label">Email address</Form.Label>
+        <h2 className="mt-4 mb-4">Log in</h2>
+        <Form.Group className="loginForm__group">
+          <Form.Label className="loginForm__label">Email address</Form.Label>
           <Form.Control
             value={email}
             onChange={(event) => setEmail(event.target.value)}
@@ -47,8 +47,8 @@ export default function LogIn() {
             required
           />
         </Form.Group>
-        <Form.Group className="loginForm__control">
-          <Form.Label lassName="loginForm__label">Password</Form.Label>
+        <Form.Group className="loginForm__group">
+          <Form.Label className="loginForm__label">Password</Form.Label>
           <Form.Control
             value={password}
             onChange={(event) => setPassword(event.target.value)}
