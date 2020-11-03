@@ -1,5 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function LogIn() {
-  return <div>This is Log In page</div>;
+  return (
+    <div>
+      Don't have an account?{" "}
+      <Link to="/signUp" style={{ textAlign: "center" }}>
+        Sign up
+      </Link>
+    </div>
+  );
 }
