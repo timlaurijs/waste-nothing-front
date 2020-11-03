@@ -10,6 +10,7 @@ const loginSuccess = (userWithToken) => {
     payload: userWithToken,
   };
 };
+export const logOut = () => ({ type: LOG_OUT });
 
 export const login = (email, password) => {
   return async (dispatch, getState) => {
