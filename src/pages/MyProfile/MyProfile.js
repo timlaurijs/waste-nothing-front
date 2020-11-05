@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-// import Button from "react-bootstrap/Button";
+import Button from "react-bootstrap/Button";
 import { Image } from "react-bootstrap";
 import { selectUser } from "../../store/user/selectors";
 import { getUserWithStoredToken } from "../../store/user/actions";
@@ -52,7 +52,10 @@ export default function MyProfile() {
           </td>
         </tr>
       </table>
+
       <EditProfileForm />
+      <br />
+      <Button>My items</Button>
     </div>
   );
 }
