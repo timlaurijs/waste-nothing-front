@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
-import { Icon } from "leaflet";
+
 import "leaflet/dist/leaflet.css";
 import "./Home.css";
 
@@ -28,7 +28,7 @@ export default function Home() {
       </form>
       <MapContainer
         className="leaflet-container"
-        center={[51.505, -0.09]}
+        center={[52.379189, 4.899431]}
         zoom={13}
         scrollWheelZoom={false}
       >
