@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 import SignUp from "./pages/SignUp/SignUp";
 import LogIn from "./pages/LogIn/LogIn";
 import MyProfile from "./pages/MyProfile/MyProfile";
+import Navigation from "./components/Navigation/Navigation";
 import { selectToken } from "./store/user/selectors";
 import { getUserWithStoredToken } from "./store/user/actions";
 
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <div className="App">
+      <Navigation />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/signUp" component={SignUp} />
