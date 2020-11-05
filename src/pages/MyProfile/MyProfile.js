@@ -15,10 +15,6 @@ export default function MyProfile() {
     dispatch(getUserWithStoredToken());
   }, [dispatch]);
 
-  if (!user) {
-    return <div>Please Login to see your profile</div>;
-  }
-
   return (
     <div>
       <h3>My Profile</h3>
