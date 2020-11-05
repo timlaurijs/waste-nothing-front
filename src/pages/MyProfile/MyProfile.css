@@ -1,3 +1,22 @@
+.myProfile {
+  display: flex;
+
+  /* padding-left: 20px; */
+}
+
+.myProfile__left {
+  border-right: 0.04px solid lightgrey;
+  flex: 0.4;
+  height: 100vh;
+  padding: 20px;
+}
+.myProfile__right {
+  flex: 0.6;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: scroll;
+}
 .myInfo__table {
   width: 400px;
   margin: 20px auto;
