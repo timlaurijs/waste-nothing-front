@@ -5,6 +5,9 @@ export default (state = initialState, { type, payload }) => {
     case "SET_ITEMS":
       return [...state, ...payload];
 
+    case "RESET_ITEMS":
+      return initialState;
+
     default:
       return state;
   }

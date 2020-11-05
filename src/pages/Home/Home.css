@@ -1,0 +1,29 @@
+.home-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.home-container h1 {
+  margin-bottom: 1em;
+}
+
+.form-group {
+  position: relative;
+  margin: 0 auto;
+}
+
+.search-field {
+  width: 70%;
+}
+
+input[type="submit"] {
+  position: absolute;
+  top: -24px;
+  right: 0;
+  width: fit-content;
+  border-left: 0;
+}
+
+img {
+  width: 300px;
+}
