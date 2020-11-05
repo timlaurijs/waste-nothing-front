@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import Button from "react-bootstrap/Button";
-
+// import Button from "react-bootstrap/Button";
 import { Image } from "react-bootstrap";
 import { selectUser } from "../../store/user/selectors";
 import { getUserWithStoredToken } from "../../store/user/actions";
 import "./MyProfile.css";
+import EditProfileForm from "../../components/EditProfileForm";
 
 export default function MyProfile() {
   const user = useSelector(selectUser);
@@ -52,7 +52,7 @@ export default function MyProfile() {
           </td>
         </tr>
       </table>
-      <Button>Edit profile</Button>
+      <EditProfileForm />
     </div>
   );
 }
