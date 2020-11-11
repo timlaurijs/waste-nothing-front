@@ -1,12 +1,14 @@
 import axios from "axios";
+import { apiUrl } from "../../config/constants";
 
-export default function fetchAllItemsByCityName(cityName) {
+export default function fetchAllItemsByCityName(queryType, query) {
+  console.log(queryType, query);
   return async (dispatch, getState) => {
     try {
       if (getState().items.length) {
         dispatch(resetItems());
       }
-      const data = await axios.get(`http://localhost:4000/items/${cityName}`);
+      const data = await axios.get(`${apiUrl}/items/${queryType}/${query}`);
       dispatch(setItems(data.data));
     } catch (e) {
       console.log(e, "<===== error");
