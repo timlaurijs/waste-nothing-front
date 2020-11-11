@@ -9,6 +9,7 @@ import MyProfile from "./pages/MyProfile/MyProfile";
 import Navigation from "./components/Navigation/Navigation";
 import { selectToken } from "./store/user/selectors";
 import { getUserWithStoredToken } from "./store/user/actions";
+import ItemDetails from "./components/ItemDetails/ItemDetails";
 
 function App() {
   const token = useSelector(selectToken);
@@ -25,6 +26,7 @@ function App() {
         <Route exact path="/signUp" component={SignUp} />
         <Route exact path="/logIn" component={LogIn} />
         {token ? <Route exact path="/myProfile" component={MyProfile} /> : null}
+        <Route path="/item-details/:id" component={ItemDetails} />
       </Switch>
     </div>
   );

@@ -16,6 +16,10 @@
   width: 70%;
 }
 
+.select-search-by {
+  width: fit-content;
+}
+
 input[type="submit"] {
   position: absolute;
   top: -24px;
@@ -26,4 +30,11 @@ input[type="submit"] {
 
 img {
   width: 300px;
+}
+
+.item-details-link:link,
+.item-details-link:visited,
+.item-details-link:active {
+  text-decoration: none;
+  color: inherit;
 }
